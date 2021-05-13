@@ -1,0 +1,19 @@
+#Need to import random to pick a random number for us
+import random
+
+#First a while loop to keep the code running
+loop = 0
+
+while loop == 0:
+  #basic player interface *just yes and no*
+  player_choice = input("Do you wish to roll the dice    *please only type yes or no* ")
+  if player_choice == "yes":
+   #This chooses a random integer for us
+   dice_roll = random.randint(1 , 6)
+   print(dice_roll)
+
+  elif player_choice == "no":
+   print("Ok the simulation is ending")
+   loop = 1
+  else:
+   print("Please only say yes or no")
